@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rundum Transport GmbH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img.logo {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo Integration -->
+        <img src="logo.jpeg" alt="Rundum Transport GmbH Logo" class="logo">
+        <h1>Rundum Transport GmbH</h1>
+    </header>
+    <main>
+        <h2>Über uns</h2>
+        <p>Wir sind ein junges, wachsendes Unternehmen, das Transport- und Lagerdienstleistungen bis 3,5 t anbietet.</p>
+        <h2>Kontakt</h2>
+        <p>Rundum Transport GmbH<br>Willi‑Graf‑Str. 94A, 53881 Euskirchen<br>Amtsgericht Bonn – HRB 30474</p>
+        <p>E-Mail: <a href="mailto:info@rundum-transport.de">info@rundum-transport.de</a></p>
+        <form action="mailto:info@rundum-transport.de" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </main>
+</body>
+</html>
